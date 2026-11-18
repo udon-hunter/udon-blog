@@ -41,14 +41,20 @@
     .map-btn { display: inline-block; margin-top: 1.2rem; background: #d96b27; color: #fff; padding: 0.6rem 1.4rem; border-radius: 4px; text-decoration: none; font-weight: bold; }
     footer { background: #1b365d; color: #fff; text-align: center; padding: 1.5rem; margin-top: 3rem; }
   </style>
-  <!-- Google アナリティクス（アクセス解析） -->
-  <script async src="https://googletagmanager.com"></script>
+  <!-- Google アナリティクス -->
   <script>
+    var gaId = 'G-KZ4FZP05L7';
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com' + '/gtag/js?id=' + gaId;
+    document.head.appendChild(s);
+
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
+    gtag('config', 'G-KZ4FZP05L7');
   </script>
+
 </head>
 <body>
   <header onclick="goHome()">
